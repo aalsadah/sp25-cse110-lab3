@@ -1,9 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <title>Art team meeting 1</title>
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <meta name="description" content="Meeting minutes for the first Art Team meeting about card design.">
   </head>
   <body>
-    
+    <header>
+      <div><h1>Team 4: Art Team Meeting 1</h1></div>
+      <div><h2>Designing Cards</h2></div>
+      <div><h3>April 15th, 2025</h3></div>
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance list</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#previous">Previous Week</a></li>
+          <li><a href="#next">Next Week</a></li>
+          <li><a href="#comments">Comments and Concerns</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance List</h2>
+        <ul>
+          <li><strong>Ali AlSadah</strong></li>
+          <li><strong>Eve Nguyen</strong></li>
+          <li><strong>Arman Nurbalin</strong></li>
+          <li><strong>Kyle Long</strong></li>
+        </ul>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Decide upon a meeting time</li>
+          <li>Find card designs</li>
+        </ol>
+      </section>
+
+      <section id="previous">
+        <h2>Previous Week Tasks</h2>
+        <p>Unfinished tasks:</p>
+        <ul>
+          <li>No Unfinished tasks :)</li>
+        </ul>
+      </section>
+
+      <section id="next">
+        <h2>Next Week Tasks</h2>
+        <ul>
+          <li>create a card template and ask team's opinion</li>
+          <li>Create our own art assets</li>
+        </ul>
+      </section>
+
+      <section id="comments">
+        <h2>Comments and Concerns</h2>
+        <p><em>Eve:</em> I think we need to create our own assets.</p>
+        <details>
+          <summary>Click to see more discussion notes</summary>
+          <p>There was a brief discussion on the projects color pallete.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Visual Aids</h2>
+        <p><b>Card layout diagram:</b></p>
+        <img src="card.png" alt="Card layout design diagram">
+      </section>
+
+      <section>
+        <h2>Media</h2>
+        <p>Audio recording of meeting:</p>
+        <audio controls>
+          <source src="GroupSound.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <p>Video recording of meeting:</p>
+        <video controls width="320">
+          <source src="Group clip.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Feedback Form</h2>
+        <form>
+          <fieldset>
+            <legend>Meeting Feedback</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <p>Did you find the meeting useful?</p>
+            <input type="radio" id="yes" name="useful" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="useful" value="no">
+            <label for="no">No</label><br><br>
+
+            <p>What topics interested you most?</p>
+            <input type="checkbox" id="design" name="topic" value="design">
+            <label for="design">Design</label>
+            <input type="checkbox" id="tools" name="topic" value="tools">
+            <label for="tools">Tools</label><br><br>
+
+            <label for="platform">Preferred platform:</label>
+            <select id="platform" name="platform">
+              <option value="figma">Figma</option>
+              <option value="photoshop">Photoshop</option>
+              <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="tool">Other tool:</label>
+            <input list="tools" id="tool" name="tool">
+            <datalist id="tools">
+              <option value="Canva">
+              <option value="Krita">
+              <option value="Sketch">
+            </datalist><br><br>
+
+            <label for="commentsBox">Comments:</label><br>
+            <textarea id="commentsBox" name="comments" rows="4" cols="40"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><small>&copy; 2025 Team 4 - Art Division</small></p>
+      <span>End of meeting notes.</span>
+    </footer>
   </body>
 </html>
+
