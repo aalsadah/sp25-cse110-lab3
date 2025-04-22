@@ -1,16 +1,14 @@
 /* ================================
    General CSS Topics
    ================================ */
-
-/* CSS Variable with Fallback */
 :root {
     --main-bg: hsl(160, 50%, 90%);
     --accent-color: orange;
   }
   
   body {
-    background-color: var(--main-bg, #f0f0f0); /* fallback if variable fails */
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg, #f0f0f0);
+    font-family: 'Playwrite AU SA', sans-serif;
     margin: 0;
     padding: 0;
     color: rgb(33, 33, 33); /* using rgb */
