@@ -1,7 +1,7 @@
 /* ================================
    General CSS Topics
    ================================ */
-:root {
+   :root {
     --main-bg: hsl(160, 50%, 90%);
     --accent-color: orange;
   }
@@ -11,48 +11,46 @@
     font-family: 'Playwrite AU SA', sans-serif;
     margin: 0;
     padding: 0;
-    color: rgb(33, 33, 33); /* using rgb */
+    color: rgb(33, 33, 33);
   }
   
   /* ================================
-     Colors
+     Color & Backgrounds
      ================================ */
   header {
     background-color: color-mix(in srgb, orange 60%, white 40%);
-    color: #FFFFFF; /* hex code */
+    color: #FFFFFF;
     padding: 1rem;
     border-bottom: 4px solid color(display-p3 0.2 0.4 0.6 / 1);
   }
   
   nav ul li a:hover {
-    color: hsl(220, 60%, 50%); /* hsl */
+    color: hsl(220, 60%, 50%);
   }
   
   nav ul li a:active {
-    color: hsla(220, 60%, 50%, 0.5); /* hsla */
+    color: hsla(220, 60%, 50%, 0.5);
   }
   
   h1 {
-    color: orange; /* color name */
+    color: orange;
   }
   
   /* ================================
-     Units (3 relative + 3 absolute)
+     Units
      ================================ */
   main {
-    padding: 2em; /* relative */
-    font-size: 1.2rem; /* relative */
-    line-height: 1.5em; /* relative */
+    padding: 2em;
+    font-size: 1.2rem;
+    line-height: 1.5em;
     max-width: 900px;
-    width: 90vw; /* absolute + responsive */
-    min-height: 500px; /* absolute */
+    width: 90vw;
+    min-height: 500px;
   }
   
   /* ================================
      Box Model
      ================================ */
-  
-  /* Margin - Longhand */
   section {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -60,13 +58,11 @@
     margin-right: 15px;
   }
   
-  /* Margin - Shorthand + auto */
   form {
     margin: auto;
     margin: 10px 20px 10px 20px;
   }
   
-  /* Padding - Longhand */
   fieldset {
     padding-top: 15px;
     padding-right: 15px;
@@ -74,12 +70,10 @@
     padding-left: 15px;
   }
   
-  /* Padding - Shorthand */
   nav ul {
     padding: 10px 20px;
   }
   
-  /* Border - All properties */
   img {
     border-style: solid;
     border-color: #444;
@@ -88,7 +82,7 @@
   }
   
   /* ================================
-     Text
+     Text Styling
      ================================ */
   h2 {
     text-decoration: underline;
@@ -105,7 +99,7 @@
   }
   
   footer span {
-    display: none; /* demonstrate display: none */
+    display: none;
   }
   
   ul li {
@@ -123,7 +117,7 @@
   }
   
   /* ================================
-     Position
+     Positioning
      ================================ */
   header {
     position: sticky;
@@ -147,7 +141,7 @@
   }
   
   /* ================================
-     Flexbox Layout
+     Flexbox
      ================================ */
   nav ul {
     display: flex;
@@ -157,7 +151,7 @@
   }
   
   /* ================================
-     Grid Layout
+     Grid
      ================================ */
   #agenda ol {
     display: grid;
@@ -167,18 +161,16 @@
   }
   
   /* ================================
-     Responsive Media Query
+     Media Queries
      ================================ */
   @media (max-width: 768px) {
     body {
       font-size: 1rem;
       background-color: #fefefe;
     }
-  
     nav ul {
       flex-direction: column;
     }
-  
     #agenda ol {
       grid-template-columns: 1fr;
     }
@@ -189,5 +181,77 @@
       font-size: 1.1rem;
       text-align: center;
     }
+  }
+  
+  /* Class Selector */
+  .highlight {
+    background-color: yellow;
+  }
+  
+  /* ID Selector */
+  #commentsBox {
+    border: 2px dashed #999;
+  }
+  
+  /* Universal Selector */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Attribute Selector */
+  input[type="text"] {
+    background-color: #eef;
+    border: 1px solid #aaa;
+  }
+  
+  /* Selector List */
+  h1, h2 {
+    letter-spacing: 1px;
+  }
+  
+  /* Descendant Combinator */
+  section ul {
+    list-style-type: square;
+  }
+  
+  /* Child Combinator */
+  form > fieldset {
+    border: 2px solid teal;
+  }
+  
+  /* General Sibling Combinator */
+  h2 ~ p {
+    font-size: 1.05rem;
+    color: gray;
+  }
+  
+  /* Adjacent Sibling Combinator */
+  label + input {
+    margin-top: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Combining Two Selectors */
+  p.highlight {
+    font-weight: bold;
+  }
+  
+  /* New: :has() Selector */
+  form:has(textarea:focus) {
+    outline: 3px solid orange;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: navy;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: red;
   }
   
