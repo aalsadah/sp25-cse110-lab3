@@ -18,10 +18,10 @@
      Color & Backgrounds
      ================================ */
   header {
-    background-color: color-mix(in srgb, orange 60%, white 40%);
+    background-color: orange;
     color: #FFFFFF;
     padding: 1rem;
-    border-bottom: 4px solid color(display-p3 0.2 0.4 0.6 / 1);
+    border-bottom: black 2px solid;
   }
   
   nav ul li a:hover {
